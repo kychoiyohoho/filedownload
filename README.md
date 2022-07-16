@@ -8,9 +8,11 @@ const initialState = {
 
 export default function contacts(state = initialState, action) {
     switch (action.type) {
+    
         //새로운 데이터가 만들어 지는데, ...state 로 {state:list[{}]}상태이다,
         //action에서 contact 를 복제해서 contact 상위개념인 list 에 붙여넣기 한다. 
         //list 는 상위개념인 state에 붙여넣기 한다.
+        
         case actionTypes.CREATE_CONTACT:
             return {
                 ...state,
